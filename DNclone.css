@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .bgvideo{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+} */
+:root{
+    --clr-blue:rgb(22, 92, 255);
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-image: url("images/whiteps.png");
+    background-size: cover;
+    background-position: center;
+    background-position-x: 0;
+    background-position-y: 0;
+}
+.navbar{
+    background-color: white;
+    border-bottom: solid 1px  rgba(191, 191, 191, 0.500);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    color: rgb(74, 74, 74);
+    z-index: 10;
+}
+.navbar0,.navbar1{
+    display: flex;
+    border-right: 1px solid rgba(191, 191, 191, 0.500);
+    align-items: center;
+}
+.logoname{
+    padding-right: 20px;
+    color: rgb(232, 0, 0);
+    font-size:25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo{
+    margin-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.booknowbtn,.navbar2,.signinbtn,.fehead,.lshead,.mainfehead,.mainlshead{
+    display: flex;
+    align-items: center;
+}
+.navbar h4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.navbarbtn{
+    padding: 10px 5px;
+    margin-left: 15px;
+    border-radius: 90px;
+    background-color: var(--clr-blue);
+    color: white;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.signin{
+    position: absolute;
+    right: 15px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border-color: rgba(191, 191, 191, 0.500);
+    border-color: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+}
+#toggleDark{
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+    padding: 3px;
+}
+.navbar02{
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    margin-top: 66px;
+    background-color: rgba(225, 255, 0, 0.073);
+    z-index: 8;
+}
+.navbar-2,.sidenavbar-2{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    color: gray;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.navbar-2 h5{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbarmenu{
+    display: flex;
+    color: rgb(85, 85, 85);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    align-items: center;
+    display: none;
+    z-index: 11;
+}
+.navbarx{
+    display: flex;
+    color: rgb(85, 85, 85);
+    position: fixed;
+    left: 21px;
+    top: 19px;
+    font-size: 25px;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+}
+.bars{
+    display: block;
+}
+/* Side navbar */
+.sidenavbarsection{
+    margin-top: 65px;
+    background-color: white;
+    width: 95%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+}
+.sidenavbardiv{
+    height: 93vh;
+}
+.sidenavbar-2{
+    background-color: rgba(225, 255, 0, 0.073);
+
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+}
+.sidenavbar-2 h5{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sidenavbar2 h4{
+    margin-left: 20px;
+}
+.sidenavbarsection h4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+.booknowbtn2{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.navbarbtn2{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 90px;
+    background-color: var(--clr-blue);
+    color: white;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: medium;
+}
+.snavbar1{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar2 p{
+    display: absolute;/*...................................................*/
+}
+
+/* multi class to one value */
+
+.fedropdown,.cddropdown{
+    padding-right: 20px;
+}
+.mainfedropdown,.mainlsdropdown,.maincddropdown{
+    padding-right:10px;
+}
+.fesubmenu1 li,.cdsubmenu1 li,.cdsubmenu li,.lssubmenu1 li,.mainlssubmenu li,.mainfesubmenu li{
+    color: black;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fesubmenu1 li:hover,.cdsubmenu1 li:hover,.cdsubmenu li:hover,.lssubmenu1 li:hover,.mainlssubmenu li:hover,.mainfesubmenu li:hover{
+    background-color: gray;
+    a{color: white;}
+    cursor: pointer;
+}
+.fesubmenu1 a,.cdsubmenu1 a,.cdsubmenu a,.lssubmenu1 a,.mainlssubmenu a,.mainfesubmenu a{
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+.fehead:hover,.lshead:hover,.mainlshead:hover,.mainfehead:hover{
+    color:rgb(1, 129, 233);
+    ul{display: block;}
+    cursor: pointer;
+}
+.sidenavbar-2 h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cdsubmenu{
+    list-style: none;
+    background-color: rgb(218, 218, 218);
+    border: solid 2px gray;
+    border-radius: 5px;
+    position: absolute;
+    top: 65px;
+    left: 202px;
+    width: 156px;
+    padding: 5px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    display: none;
+}
+.mainlssubmenu{
+    position: absolute;
+    top: 65px;
+    left: 850px;
+    background-color: rgb(218, 218, 218);
+    list-style: none;
+    padding: 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+.mainfesubmenu{
+    position: absolute;
+    top: 65px;
+    left: 515px;
+    background-color: rgb(218, 218, 218);
+    list-style: none;
+    padding: 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+.cdsubmenu1{
+    position: absolute;
+    top: 96px;
+    left: 205px;
+    background-color: rgb(218, 218, 218);
+    list-style: none;
+    padding: 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+.fesubmenu1{
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    background-color: rgb(218, 218, 218);
+    list-style: none;
+    padding: 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+.lssubmenu1{
+    position: absolute;
+    top: 352px;
+    left: 185px;
+    background-color: rgb(218, 218, 218);
+    list-style: none;
+    padding: 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+
+/* .cdsubmenu span{
+    background-image: linear-gradient(hsl(0,0%,100%), hsl(0,0,100%));
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0, 100%;
+    transition: background-size 0.5s ease;
+} */
+
+
+/* hovers */
+.navbar0:hover{
+    cursor: pointer;
+}
+.navbar1:hover{
+    cursor: pointer;
+    background-color: rgb(243, 243, 243);
+}
+.signin:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+.navbarbtn:hover,.navbarbtn2:hover,.learnmore:hover{
+    background-color: rgb(0, 60, 201);
+    cursor: pointer;
+}
+.snavbar1:hover,.ad:hover,.fe:hover,.sr:hover,.sr1:hover,.ls:hover,.ft:hover{
+    color: rgb(1, 129, 233);
+    cursor: pointer;
+}
+.ho:hover,.di:hover,.cc:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbarmenu:hover, .navbarx:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* ..........................................................MEDIA SCREEN....................................................... */
+
+@media screen and (max-width:1165px) {
+    .navbar1,.navbar2,.navbar02,.navbar-2,.navbarbtn{
+        display:none;
+    }
+    .navbarmenu{
+        display: block;
+    }
+    .navbar0{
+        margin-left: 30px;
+    }
+    .mainpage{
+        margin-top: 110px;
+        .wlcm{
+            font-size: 400%;
+        }
+    }
+    .navbar{
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .wlcmhead{
+        text-align: center;
+        .wlcm{
+            margin-top:150px; 
+            padding-top: 0px;
+            margin-bottom:20px; 
+        }
+    }
+}
+@media screen and (min-width:1165px) {
+    .bars{
+        display: none;
+    }
+    .sidenavbarsection,.sidenavbardiv{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1345px) {
+    .sr{display: none;}
+    .mainlssubmenu{left: 672px;}
+}
+
+@media screen and (max-width:940px) {
+    .mainpage02{
+        .mainpage-2{
+            display: block;
+            .myname{
+                margin-top: 10px;
+            }
+        }
+    }
+    .wlcmhead{
+        text-align: center;
+        .wlcm{
+            font-size: 320%;
+            margin-top: 0px; 
+            padding-top: 0px;
+            padding-bottom: 25px;
+            
+        }
+    }
+    .lm{
+        display: flex;
+        justify-content: center;
+        margin-top: -20px;
+        .learnmore{
+            right: 0px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    .mainpage02{
+        .myhead{
+            .my{font-size: 37px; margin-top: 10px; padding-bottom: 5px;}
+        }
+        .img{
+            .profileimg{width: 350px; margin-top: 5px; margin-bottom: 5px;}
+        }
+        .myname{.typetext{h2{font-size: 25px;} span{font-size: 30px;}}}
+    }
+}
+@media screen and (max-width:630px){
+    .wlcmhead{
+        .wlcm{
+            font-size: 320%;
+            margin-bottom: 10px;
+            padding-top: 0px;
+        }
+    }
+    .lm{
+        margin-top: -20px;
+    }
+    .mainpage02{
+        .myhead{
+            .my{font-size: 30px; margin-top: 10px; padding-bottom: 5px;}
+        }
+        .img{
+            .profileimg{width: 300px; margin-top: 5px; margin-bottom: 5px;}
+        }
+        .myname{.typetext{h2{font-size: 20px;} span{font-size: 25px;}}}
+    }
+}
+@media screen and (max-width:560px){
+    .wlcmhead{
+        .wlcm{
+            font-size: 300%;
+        }
+    }
+    .lm{
+        margin-top: -20px;
+    }
+}
+
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+/*.............................................................. Main page........................................................*/
+
+/* .mainpage{
+
+} */
+.wlcmhead{
+
+    text-align: center;
+}
+.wlcm{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 70px;
+    animation: fade-up 0.5s 0.4s backwards;
+}
+.my{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.myhead{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.myname{
+    margin-left: 10px;
+    margin-top: 150px;
+}
+
+.typetext{
+    margin-top: 20px;
+    padding-left: 5px;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typetext span{
+    /* color: #fff724; */
+    color: rgb(255, 85, 0);
+    font-size: 30px;
+}
+.img{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: c;
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: right;
+}
+.profileimg{
+    width: 400px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.mainpage02{
+    display: flex;
+    justify-content: center;
+}
+.mainpage-2{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.lm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lm i{
+    padding-left: 10px;
+    color: white;
+}
+.learnmore{
+    position: relative;
+    right: 200px;
+    margin-top: -140px;
+    margin-bottom: 100px;
+    padding: 10px;
+    width: fit-content;
+    background-color: var(--clr-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* ...................................2nd PAGE.............................................. */
+#secondpage{
+    height: 768px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.abtme{
+    padding: 0 0px 60px 0px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.abtme1{
+    margin: 0 20px 40px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.abtme2{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    td{padding: 10px;}
+}
+
+
+
+
+.footer{
+    padding-top: 20px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 200px;
+}
+.footer div{
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    padding-bottom: 0px;
+}
+
+.btn-cv{
+    text-decoration: none;
+    text-anchor: none;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    animation: fade-down 0.5s 0.4s backwards;
+}
+    
