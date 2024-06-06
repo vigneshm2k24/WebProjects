@@ -18,7 +18,7 @@ body{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-image: url("images/whiteps.png");
+    background-image: url("../assets/images/whiteps.png");
     background-size: cover;
     background-position: center;
     background-position-x: 0;
@@ -85,7 +85,6 @@ body{
     position: absolute;
     right: 15px;
     background-color: rgb(252, 252, 252);
-    color: rgb(0, 0, 0);
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -95,12 +94,14 @@ body{
     border-color: none;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 90px;
     font-style: normal;
     font-size: medium;
+    a{color: black; }
 }
 a{
     text-decoration: none;
+    color: gray;
 }
 #toggleDark{
     position: absolute;
@@ -188,12 +189,12 @@ a{
     padding-bottom: 25px;
     padding-left: 10px;
 }
-.booknowbtn2{
+/* .booknowbtn2{
     display: flex;
     align-items: center;
     margin-top: 20px;
-}
-.navbarbtn2{
+} */
+/* .navbarbtn2{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -208,7 +209,7 @@ a{
     font-weight: weight;
     font-style: normal;
     font-size: medium;
-}
+} */
 .snavbar1{
     margin-top: 30px;
     width: 100%;
@@ -253,6 +254,12 @@ a{
     cursor: pointer;
 }
 .sidenavbar-2 h5:hover{
+    a{color: black;}
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbar-2 h5:hover{
+    a{color: black;}
     text-decoration: underline;
     cursor: pointer;
 }
@@ -368,8 +375,8 @@ a{
 
 /* ..........................................................MEDIA SCREEN....................................................... */
 
-@media screen and (max-width:1165px) {
-    .navbar1,.navbar2,.navbar02,.navbar-2,.navbarbtn{
+@media screen and (max-width:1175px) {
+    .navbar1,.navbar2,.navbar02,.navbar-2{
         display:none;
     }
     .navbarmenu{
@@ -405,7 +412,7 @@ a{
     }
 }
 
-@media screen and (max-width:1345px) {
+@media screen and (max-width:1355px) {
     .sr{display: none;}
     .mainlssubmenu{left: 672px;}
 }
@@ -493,7 +500,6 @@ a{
 
 } */
 .wlcmhead{
-
     text-align: center;
 }
 .wlcm{
@@ -586,7 +592,7 @@ a{
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage{
-    height: 768px;
+    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -598,11 +604,10 @@ a{
     justify-content: center;
 }
 .abtme1{
-    margin: 0 20px 40px 20px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    
+    padding: 5px 10px;
+    margin: 0 20px 60px 20px;
+    font-size: 18px;
+    text-align: center;
 }
 .abtme2{
     font-size: 25px;
@@ -618,7 +623,7 @@ a{
     padding-top: 20px;
     background-color: rgb(29, 29, 29);
     color: white;
-    height: 200px;
+    height: 30vh;
 }
 .footer div{
     padding: 10px;
@@ -638,4 +643,63 @@ a{
     width: fit-content;
     animation: fade-down 0.5s 0.4s backwards;
 }
-    
+
+
+#thirdpage{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll img{
+    max-width: 100px;
+    scale: 0.8;
+}
+.htmllogo{
+    size: 300px;
+}
+.scroll{
+    margin: 30px 0px;
+    width: 1000px;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    white-space: nowrap;
+}
+.scroll div {
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+    animation-delay: calc(var(--time)*-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
