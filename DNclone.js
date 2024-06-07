@@ -40,7 +40,9 @@ const toggle=document.getElementById("toggleDark")
 const body=document.querySelector("body")
 var profileimg=document.querySelector('profileimg')
 var span=document.getElementById('span')
-// var navbar2=document.getElementById('navbar')
+var img=document.querySelector('.profileimg')
+var navbar_2=document.querySelector('.navbar-2')
+var navbar=document.querySelector(".navbar")
 
 toggle.addEventListener('click',function(){
     this.classList.toggle('fa-moon');
@@ -48,13 +50,20 @@ toggle.addEventListener('click',function(){
         body.style.background='white';
         body.style.color='black';
         span.style.color='rgb(255, 85, 0)';
-        body.style.transition='1s';
+        body.style.transition='1s'; 
+        navbar_2.style["boxShadow"] = 'rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px';
+        img.style["boxShadow"] = 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset';
     }else{
         body.style.background='black';
         body.style.color='white';
         span.style.color='#F4CE14';
         body.style.transition='1s';
-        // navbar1.style.color='white';
+        navbar_2.style["boxShadow"] = 'rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px';
+        // navbar.style["boxShadow"] = 'rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px';
+        // navbar.style.color='white';
+        // navbar.style.background ='black';
+        img.style["boxShadow"] = 'rgba(205, 205, 162, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(245, 218, 191, 0.35) 0px -2px 6px 0px inset';
+        // navbar1.style.color='white';  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5); 
         // navbar2.style.color='white'
     }
 })
