@@ -81,6 +81,8 @@ var typed = new Typed(".auto-type",{
 // if (navbar2=="676px"){
 //     sidemenubtn.style.display="none"
 // }
+
+//.......................................................skill percentage animation...................................................
 var navbar02=document.querySelector(".navbar02")
 if (navbar02.style.display="block"){
     sidemenu.style.display="none";

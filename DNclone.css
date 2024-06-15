@@ -988,7 +988,7 @@ a {
     text-align: right;
 }
 
-.profileimg {
+.profileimg,.profileimg2 {
     width: 400px;
     background-color: white;
     border-radius: 30px;
@@ -1036,23 +1036,34 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
+    background-color: rgb(114, 214, 253);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.abtme {
-    padding: 0 0px 60px 0px;
+.profileimg2{
+    margin: 70px 10px 0px 100px;
+}
+.abtmehead,.eduhead{
+    margin-top: 60px;
+}
+.abtme,.edu{
+    padding: 0 0px 50px 0px;
     font-size: 40px;
     display: flex;
     justify-content: center;
 }
-
-.abtme1 {
+.abtme11{
     padding: 5px 10px;
     margin: 0 20px 60px 20px;
-    font-size: 18px;
+    font-size: 19px;
+    text-align: left;
+}
+.abtme1,.edu1 {
+    padding: 5px 10px;
+    margin: 0px 20px 60px 20px;
+    font-size: 19px;
     text-align: center;
 }
 
@@ -1093,7 +1104,7 @@ a {
     animation: fade-down 0.5s 0.4s backwards;
 }
 
-
+/* ....................................3 Page................................................................ */
 #thirdpage {
     padding-top: 100px;
     height: 90vh;
@@ -1193,32 +1204,6 @@ svg {
     align-items: center;
     transform: rotate(270deg);
 }
-
-/* @keyframes anim1{
-    100%{
-        stroke-dashoffset: 309;
-    }
-}
-@keyframes anim2{
-    100%{
-        stroke-dashoffset: 140;
-    }
-}
-@keyframes anim3{
-    100%{
-        stroke-dashoffset: 252;
-    }
-}
-@keyframes anim4{
-    100%{
-        stroke-dashoffset: 393;
-    }
-}
-@keyframes anim5{
-    100%{
-        stroke-dashoffset: 365;
-    }
-} */
 #number1,
 #number2,
 #number3,
@@ -1292,3 +1277,49 @@ svg {
 .item9 {
     animation-delay: 13.2s;
 }
+
+/* ....................................4 Page................................................................ */
+
+#fourthpage,#fifthpage, #sixthpage, #seventhpage{
+    height: 100vh;
+}
+#subsecondpage{
+    p{
+        margin-top: -20px;
+    }
+}
+.edu2{
+    display: flex;
+}
+.school,.college{
+    color: black;
+    margin: 40px;
+    padding: 35px;
+    background-color: aquamarine;
+    width: 50%;
+    border-radius: 17px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+
+    }
+    h2{
+        padding: 15px 0px;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    h4{
+        padding: 10px 0px 0px;
+    }
+    span{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgba(255, 76, 41, 0.812);
+    }
+}
+/* .college{
+    border-color: rgb(206, 255, 127);
+    width: 50%;
+} */
