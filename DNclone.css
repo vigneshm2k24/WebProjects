@@ -1036,7 +1036,6 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
-    background-color: rgb(114, 214, 253);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -1076,25 +1075,6 @@ a {
         padding: 10px;
     }
 }
-
-.footer {
-    padding-top: 20px;
-    background-color: rgb(29, 29, 29);
-    color: white;
-    height: 30vh;
-}
-
-.footer div {
-    padding: 10px;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-}
-
-.copyright {
-    padding-bottom: 0px;
-}
-
 .btn-cv {
     text-decoration: none;
     text-anchor: none;
@@ -1107,7 +1087,7 @@ a {
 /* ....................................3 Page................................................................ */
 #thirdpage {
     padding-top: 100px;
-    height: 90vh;
+    height: 100vh;
 }
 
 #thirdpage h1 {
@@ -1280,8 +1260,11 @@ svg {
 
 /* ....................................4 Page................................................................ */
 
-#fourthpage,#fifthpage, #sixthpage, #seventhpage{
+#fourthpage, #fifthpage, #sixthpage, #seventhpage{
     height: 100vh;
+}
+#fourthpage{
+    padding-top: 30px;
 }
 #subsecondpage{
     p{
@@ -1291,11 +1274,12 @@ svg {
 .edu2{
     display: flex;
 }
-.school,.college{
-    color: black;
+.school,.college,.python,.css,.js,.sw{
+    color: white;
     margin: 40px;
     padding: 35px;
-    background-color: aquamarine;
+    background: linear-gradient(148deg, rgb(36, 23, 0) 0%, rgb(152, 140, 9) 35%, rgb(5, 0, 36) 100%);  
+    /* rgb(152, 140, 9) 35% */
     width: 50%;
     border-radius: 17px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -1303,23 +1287,179 @@ svg {
         text-align: center;
         margin-bottom: 50px;
         font-size: 30px;
-
+    }
+    img{
+        width: 100px; filter: drop-shadow(0px 0px 20px rgb(200, 200, 11));
+        text-align: right; 
+        position: absolute; 
+        margin: -100px 10px 90px 260px;
     }
     h2{
+        color: rgb(230, 230, 230);
         padding: 15px 0px;
         font-size: 25px;
         letter-spacing: 1px;
     }
     h4{
+        color: rgb(34, 34, 34);
         padding: 10px 0px 0px;
     }
     span{
         font-size: 25px;
         font-weight: 600;
-        color: rgba(255, 76, 41, 0.812);
+        color: rgb(174, 255, 193);
+    }
+    h3{
+        color: rgba(208, 208, 208, 0.908);        
+        a:hover{color: var(--clr-blue);}
+    }
+}
+.school{
+    animation: boxanimation1 1s ease-out;
+}
+.college{
+    animation: boxanimation2 1s ease-out;
+}
+.college:hover,.school:hover,.python:hover,.css:hover,.js:hover,.sw:hover{
+    transform: translateY(-20px);
+    transition: 0.5s ;
+    box-shadow: rgba(0, 0, 0, 0.19) 10px 30px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/* .college:hover::after,.school:hover::after{
+    transform: translateY(0px);
+    transition: 0.5s ;
+} */
+
+@keyframes boxanimation1{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes boxanimation2{
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
     }
 }
 /* .college{
     border-color: rgb(206, 255, 127);
     width: 50%;
 } */
+
+/* ...................................... 5th page ........................... */
+#fifthpage{
+    margin-top: 330px;
+}
+.swhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sw{
+        width: 50%;
+        height: 300px;
+        line-height: 35px;
+        padding: 40px 20px 40px 50px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+/* .......................................... Mail page....................................... */
+
+.mail{
+    display: flex;
+    justify-content: center;
+    .inputs{
+        display: block;
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 500px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    .inputs::placeholder{
+        font-size: medium;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputs:focus{
+        border: 2px solid --clr-blue;
+    }
+    textarea{
+        height: 150px;
+    }
+    button{
+        font-size: 17px;
+        width: auto;
+        text-align: center;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 35px;
+        background-color: var(--clr-blue);
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+}
+
+/* .......................................... Footer page....................................... */
+.footer {
+    padding-top: 20px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: auto;
+}
+
+.footer div {
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacthead{
+    margin-bottom: 20px;
+}
+.contact{
+    margin-top: 50px;
+    a{
+    width: auto;
+    display: flex;
+    align-items: center;
+        i{
+            color: var(--clr-blue);
+            padding-left: 54px;
+            z-index: 2;
+            background-color: rgb(29, 29, 29);
+        }
+    }
+    span{
+        padding-left: 5px;
+        position: relative;
+        left: -86px;
+        overlay: hidden;
+        z-index: 1;
+        animation: footer 2s linear;
+    }
+    a:hover{
+        color: white;
+        i{color:white;}
+        span{
+            transform: translateX(86px);
+            transition: 0.5s;
+        }
+    }
+}
+.copyright {
+    color: rgb(113, 113, 113);
+    margin-top: 100px;
+    position: relative;
+    bottom: 30px;
+}
