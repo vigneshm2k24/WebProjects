@@ -835,10 +835,14 @@ a {
             stroke-dashoffset: 284;
         }
     }
-
+    #secondpage{
+        .abtmehead {
+            margin-top: -160px;
+        }
+    }
     .abtmeimg {
         position: absolute;
-        margin-top: 320px;
+        margin-top: -60px;
 
         .profileimg2 {
             width: 300px;
@@ -1133,7 +1137,49 @@ a {
             stroke-dashoffset: 665
         }
     }
+    .abtmeimg {
+        position: absolute;
+        margin-top: -80px;
 
+        .profileimg2 {
+            width: 300px;
+            margin: 5px 0px;
+        }
+    }
+
+}
+@media screen and (max-width:450px){
+    .abtmeimg {
+        position: absolute;
+        margin-top: -40px;
+
+        .profileimg2 {
+            width: 300px;
+            margin: 5px 0px;
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .abtmeimg {
+        position: absolute;
+        margin-top: -20px;
+
+        .profileimg2 {
+            width: 300px;
+            margin: 5px 0px;
+        }
+    }
+}
+@media screen and (max-width:360px){
+    .abtmeimg {
+        position: absolute;
+        margin-top: 130px;
+
+        .profileimg2 {
+            width: 250px;
+            margin: 5px 0px;
+        }
+    }
 }
 
 @keyframes cursor {
@@ -1259,10 +1305,11 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 0px;
 }
 
 .profileimg2 {
