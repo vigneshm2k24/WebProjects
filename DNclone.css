@@ -923,6 +923,38 @@ a {
             }
         }
     }
+    #subsecondpage{
+        margin-top: -100px;
+        .subsechead{
+            padding-top: 40px;
+        }
+    }
+    #fourthpage{
+        .certhead{
+            padding-top: 70px;
+        }
+    }
+    #fifthpage {
+        margin-top: 0px;
+        .swheadmain{
+            padding-top: 90px;
+        }
+    }
+    #sixthpage {
+        height: auto;
+        padding-top: 60px;
+        margin-top: 80px;
+        .projecthead{
+            padding-top: 90px;
+        }
+    }
+    #seventhpage {
+        margin-top: -650px;
+        .mailhead{
+            padding-top: 85px;
+        }
+        
+    }
     
 }
 
@@ -1016,6 +1048,39 @@ a {
     .projectshead{
         div{
             width: 80%;
+        }
+    }
+    #fifthpage {
+        margin-top: 1100px;
+        .swheadmain{
+            padding-top: 90px;
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    #fourthpage{
+        .certhead{
+            padding-top: 70px;
+        }
+        .projects{
+            justify-content: center;
+        }
+        .certificate{
+            margin: 20px 10px;
+            display: flex;
+            justify-content: center;
+            div{
+                width: 400px;
+                margin: 0px;
+            }
+        }
+    }
+    #sixthpage {
+        height: auto;
+        padding-top: 60px;
+        margin-top: 1480px;
+        .projecthead{
+            padding-top: 90px;
         }
     }
 }
@@ -1146,6 +1211,22 @@ a {
             margin: 5px 0px;
         }
     }
+    #fourthpage{
+        .certificate
+            div{
+                width: 300px;
+            }
+    }
+    #fifthpage{
+        .swhead .sw{
+            width: 200px;
+        }
+    }
+    #sixthpage{
+        .projectshead div{
+            width: 300px;
+        }
+    }
 
 }
 @media screen and (max-width:450px){
@@ -1156,6 +1237,31 @@ a {
         .profileimg2 {
             width: 300px;
             margin: 5px 0px;
+        }
+    }
+    .abtmeimg {
+        position: absolute;
+        margin-top: -80px;
+
+        .profileimg2 {
+            width: 300px;
+            margin: 5px 0px;
+        }
+    }
+    #fourthpage{
+        .certificate
+            div{
+                width: 200px;
+            }
+    }
+    #fifthpage{
+        .swhead .sw{
+            width: 200px;
+        }
+    }
+    #sixthpage{
+        .projectshead div{
+            width: 200px;
         }
     }
 }
@@ -1830,15 +1936,19 @@ svg {
 
 .swhead {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 
     .sw {
-        width: 50%;
+        max-width: 500px;
+        min-width: 400px;
         height: auto;
         line-height: 35px;
         padding: 40px 20px 40px 50px;
         font-size: 20px;
         color: white;
+        
     }
 }
 
