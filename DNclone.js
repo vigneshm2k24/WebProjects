@@ -69,7 +69,7 @@ toggle.addEventListener('click',function(){
 })
 
 var typed = new Typed(".auto-type",{
-    strings:["Python Programmer .", "Front-End Developer .", "UI Designer . . ."],
+    strings:["Python Programmer .", "Front-End Developer .","Freelancer .", "UI Designer . . ."],
     typeSpeed:100,
     backSpeed:50,
     loop: true
