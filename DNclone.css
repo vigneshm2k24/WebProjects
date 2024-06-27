@@ -20,7 +20,8 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-image: url("../assets/images/whiteps.png");
+    background-color: #ffffff;
+    /* background-image: url("../assets/images/whiteps.png"); */
     background-size: cover;
     background-position: center;
     background-position-x: 0;
@@ -466,13 +467,27 @@ a {
 
 /* ..........................................................MEDIA SCREEN....................................................... */
 @media screen and (min-width:1175px) {
-    .circle1,.circle2,.circle3,.circle4,.circle5 {
+    .bars {
+        display: none;
+    }
+
+    .sidenavbarsection,
+    .sidenavbardiv {
+        display: none;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5 {
         fill: none;
         stroke: url(#GradientColor);
         stroke-width: 20px;
         stroke-dasharray: 562;
         stroke-dashoffset: 562;
     }
+
     @keyframes anim1 {
         100% {
             stroke-dashoffset: 309;
@@ -557,7 +572,11 @@ a {
         }
     }
 
-    .circle1,.circle2,.circle3,.circle4,.circle5 {
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5 {
         r: 70;
         fill: none;
         stroke: url(#GradientColor);
@@ -595,9 +614,23 @@ a {
             stroke-dashoffset: 284;
         }
     }
+    #fourthpage {
+        display: block;
+        flex-wrap: wrap;
+
+        .python,
+        .css,
+        .js,
+        .sw,
+        .pm {
+            width: 100px;
+            height: 500px;
+        }
+    }
+
 }
 
-@media screen and (min-width:1165px) {
+/* @media screen and (min-width:1165px) {
     .bars {
         display: none;
     }
@@ -606,7 +639,7 @@ a {
     .sidenavbardiv {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width:1355px) {
     .sr {
@@ -615,6 +648,19 @@ a {
 
     .mainlssubmenu {
         left: 672px;
+    }
+
+    #fourthpage {
+
+        .python,
+        .css,
+        .js,
+        .sw,
+        .pm {
+            min-width: 180px;
+            width: 200px;
+            height: 250px;
+        }
     }
 }
 
@@ -725,7 +771,12 @@ a {
             }
         }
     }
-    .circle1,.circle2,.circle3,.circle4,.circle5 {
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5 {
         r: 70;
         fill: none;
         stroke: url(#GradientColor);
@@ -761,6 +812,90 @@ a {
     @keyframes anim5 {
         100% {
             stroke-dashoffset: 284;
+        }
+    }
+
+    .abtmeimg {
+        position: absolute;
+        margin-top: 320px;
+
+        .profileimg2 {
+            width: 300px;
+            margin: 5px 0px;
+        }
+    }
+
+    .abtmehead {
+        height: 150vh;
+
+        .abtme {
+            margin-top: 280px;
+        }
+
+        .abtme11 {
+            font-size: 18px;
+        }
+
+        .abtme2 {
+            font-size: 22px;
+            margin-top: 470px;
+        }
+    }
+
+    .edu {
+        margin-top: 400px;
+    }
+
+    .mailhead {
+        margin-top: -100px;
+    }
+
+    .abt {
+        margin-top: -100px;
+    }
+
+    .basic {
+        display: block;
+    }
+
+    #subsecondpage {
+        margin-top: 370px;
+
+        .edu {
+            margin: 0px 0px 20px;
+            padding-top: 0px;
+        }
+
+        p {
+            margin-top: -30px;
+        }
+    }
+
+    #subsecondpage .edu2 {
+        width: 95%;
+        justify-content: center;
+
+        .school,
+        .college {
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            span {
+                font-size: 21px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -819,12 +954,67 @@ a {
     }
 }
 
+@media screen and (max-width:858px) {
+    #subsecondpage .edu2 {
+        width: 95%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .school,
+        .college {
+            width: 95%;
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            span {
+                font-size: 21px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:687px) {
+    .abtmeimg {
+        padding-top: 120px;
+    }
+
+    .abtmehead {
+        height: 150vh;
+
+        .abtme11 {
+            font-size: 18px;
+        }
+
+        .abtme2 {
+            font-size: 20px;
+            margin-top: 480px;
+        }
+    }
+}
+
 @media screen and (max-width:560px) {
     .wlcmhead {
         .wlcm {
             font-size: 300%;
         }
     }
+
     .lm {
         margin-top: -20px;
     }
@@ -873,7 +1063,12 @@ a {
             }
         }
     }
-    .circle1,.circle2,.circle3,.circle4,.circle5 {
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5 {
         r: 55;
         fill: none;
         stroke: url(#GradientColor);
@@ -988,7 +1183,8 @@ a {
     text-align: right;
 }
 
-.profileimg,.profileimg2 {
+.profileimg,
+.profileimg2 {
     width: 400px;
     background-color: white;
     border-radius: 30px;
@@ -1038,28 +1234,43 @@ a {
 #secondpage {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
-.profileimg2{
-    margin: 70px 10px 0px 100px;
+
+.profileimg2 {
+    margin: 70px 10px 0px 30px;
 }
-.abtmehead,.eduhead{
+
+.abtmehead,
+.eduhead {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.abtme,.edu{
-    padding: 0 0px 50px 0px;
+
+.abtme,
+.edu,
+.abt {
+    padding: 10px 0px 50px 0px;
     font-size: 40px;
     display: flex;
     justify-content: center;
 }
-.abtme11{
+
+.abtme11 {
+    text-indent: 30px;
+    line-height: 25px;
+    width: 90%;
     padding: 5px 10px;
-    margin: 0 20px 60px 20px;
+    margin: 0px 20px 30px 20px;
     font-size: 19px;
     text-align: left;
 }
-.abtme1,.edu1 {
+
+.abtme1,
+.edu1 {
     padding: 5px 10px;
     margin: 0px 20px 60px 20px;
     font-size: 19px;
@@ -1067,14 +1278,20 @@ a {
 }
 
 .abtme2 {
+    padding: 15px;
+    margin-left: 30px;
+    border-bottom: 2px solid #ababab;
+    border-top: 2px solid #ababab;
+    border-radius: 16px;
+    width: fit-content;
+    font-weight: 500;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
 
     td {
         padding: 10px;
     }
 }
+
 .btn-cv {
     text-decoration: none;
     text-anchor: none;
@@ -1184,6 +1401,7 @@ svg {
     align-items: center;
     transform: rotate(270deg);
 }
+
 #number1,
 #number2,
 #number3,
@@ -1260,106 +1478,254 @@ svg {
 
 /* ....................................4 Page................................................................ */
 
-#fourthpage, #fifthpage, #sixthpage, #seventhpage{
-    height: 100vh;
+#fourthpage,
+#fifthpage,
+#sixthpage,
+#seventhpage {
+    height: auto;
 }
-#fourthpage{
-    padding-top: 30px;
+
+#fourthpage a {
+    margin: 5px;
 }
-#subsecondpage{
-    p{
-        margin-top: -20px;
+
+#fourthpage {
+    padding-top: 50px;
+}
+
+#subsecondpage {
+    padding-top: 70px;
+
+    p {
+        margin-top: -30px;
     }
 }
-.edu2{
+
+.edu2 {
     display: flex;
 }
-.school,.college,.python,.css,.js,.sw{
+
+.school,
+.college {
     color: white;
     margin: 40px;
     padding: 35px;
-    background: linear-gradient(148deg, rgb(36, 23, 0) 0%, rgb(152, 140, 9) 35%, rgb(5, 0, 36) 100%);  
+    background: linear-gradient(148deg, rgb(36, 23, 0) 0%, rgb(152, 140, 9) 35%, rgb(5, 0, 36) 100%);
     /* rgb(152, 140, 9) 35% */
     width: 50%;
     border-radius: 17px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    h1{
-        text-align: center;
+
+    h1 {
+        margin-top: 10px;
+    }
+}
+
+.python,
+.css,
+.js,
+.pm {
+    min-width: 180px;
+    width: 230px;
+    height: 300px;
+    margin: 5px;
+    padding: 50px 30px;
+
+    h1 {
+        margin-top: 20px;
         margin-bottom: 50px;
         font-size: 30px;
     }
-    img{
-        width: 100px; filter: drop-shadow(0px 0px 20px rgb(200, 200, 11));
-        text-align: right; 
-        position: absolute; 
-        margin: -100px 10px 90px 260px;
+}
+
+/* .python,
+.css,
+.js,
+.pm {
+    margin: 5px;
+    padding: 50px 30px;
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 30px;
     }
-    h2{
+} */
+
+.sw,
+.project1,
+.project2,
+.project3 {
+    margin: 10px;
+    padding: 50px 30px;
+    width: 30%;
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+}
+
+.school,
+.college,
+.python,
+.css,
+.js,
+.sw,
+.pm,
+.project1,
+.project2,
+.project3 {
+    color: white;
+    background: linear-gradient(148deg, rgb(36, 23, 0) 0%, rgb(152, 140, 9) 35%, rgb(5, 0, 36) 100%);
+    /* rgb(152, 140, 9) 35% */
+    border-radius: 17px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+
+    h2 {
         color: rgb(230, 230, 230);
         padding: 15px 0px;
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: 1px;
     }
-    h4{
+
+    h4 {
         color: rgb(34, 34, 34);
         padding: 10px 0px 0px;
+        font-size: 17px;
     }
-    span{
-        font-size: 25px;
+
+    span {
+        font-size: 22px;
         font-weight: 600;
         color: rgb(174, 255, 193);
     }
-    h3{
-        color: rgba(208, 208, 208, 0.908);        
-        a:hover{color: var(--clr-blue);}
+
+    h3 {
+        padding-top: 35px;
+        font-size: 16px;
+        color: rgba(155, 155, 155, 0.8);
+        /* a{
+            color: rgba(208, 208, 208, 0.908);
+        }
+        a:hover {
+            color: rgb(200, 200, 11);
+        } */
+    }
+
+    .basic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .basic1 {
+            text-align: left;
+        }
+
+        .basic2 {
+            margin: -25px 0px 0px 0px;
+            text-align: right;
+        }
     }
 }
-.school{
+
+.python,
+.css,
+.js,
+.sw,
+.pm {
+    .basic2 {
+        .cert {
+            width: 75px;
+            filter: drop-shadow(0px 0px 20px rgb(200, 200, 11));
+            text-align: right;
+            /* position: absolute; 
+            margin: -6.5% 15%  10% 15%; */
+        }
+    }
+}
+
+.school {
     animation: boxanimation1 1s ease-out;
 }
-.college{
+
+.college {
     animation: boxanimation2 1s ease-out;
 }
-.college:hover,.school:hover,.python:hover,.css:hover,.js:hover,.sw:hover{
+
+.college:hover,
+.school:hover,
+.python:hover,
+.css:hover,
+.js:hover,
+.sw:hover,
+.pm:hover,
+.project1:hover,
+.project2:hover,
+.project3:hover {
     transform: translateY(-20px);
-    transition: 0.5s ;
-    box-shadow: rgba(0, 0, 0, 0.19) 10px 30px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 10px 30px 20px, rgba(0, 0, 0, 0.23) 0px 16px 16px;
 }
+
+.css,
+.pm {
+    margin-bottom: -30px;
+}
+
+.python,
+.js {
+    margin-top: -30px;
+}
+
 /* .college:hover::after,.school:hover::after{
     transform: translateY(0px);
     transition: 0.5s ;
 } */
 
-@keyframes boxanimation1{
-    0%{
+@keyframes boxanimation1 {
+    0% {
         transform: translateX(-100px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
     }
 }
-@keyframes boxanimation2{
-    0%{
+
+@keyframes boxanimation2 {
+    0% {
         transform: translateX(200px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
     }
 }
+
 /* .college{
     border-color: rgb(206, 255, 127);
     width: 50%;
 } */
 
 /* ...................................... 5th page ........................... */
-#fifthpage{
-    margin-top: 330px;
+#fifthpage {
+    padding: 50px;
 }
-.swhead{
+
+.swhead {
     display: flex;
     justify-content: center;
     align-items: center;
-    .sw{
+
+    .sw {
         width: 50%;
         height: 300px;
         line-height: 35px;
@@ -1369,12 +1735,48 @@ svg {
     }
 }
 
-/* .......................................... Mail page....................................... */
+/* ...................................... 6th page ........................... */
+#sixthpage {
+    height: auto;
+    padding-top: 60px;
+}
 
-.mail{
+.cal-bg {
     display: flex;
     justify-content: center;
-    .inputs{
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 300px;
+        position: relative;
+    }
+}
+
+.cal img {
+    width: 300px;
+    padding: 15px;
+    background-color: rgb(18, 29, 67);
+    position: absolute;
+}
+
+/* .......................................... Mail page....................................... */
+#seventhpage {
+    height: auto;
+    padding-top: 115px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.mail {
+    background-color: violet;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
+
+    .inputs {
         display: block;
         padding: 15px;
         margin-bottom: 20px;
@@ -1383,21 +1785,26 @@ svg {
         border: none;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
-    .inputs::placeholder{
+
+    .inputs::placeholder {
         font-size: medium;
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .inputs:focus{
+
+    .inputs:focus {
         border: 2px solid --clr-blue;
     }
-    textarea{
+
+    textarea {
         height: 150px;
     }
-    button{
+
+    button {
         font-size: 17px;
         width: auto;
         text-align: center;
@@ -1424,23 +1831,28 @@ svg {
     display: flex;
     justify-content: space-evenly;
 }
-.contacthead{
+
+.contacthead {
     margin-bottom: 20px;
 }
-.contact{
+
+.contact {
     margin-top: 50px;
-    a{
-    width: auto;
-    display: flex;
-    align-items: center;
-        i{
+
+    a {
+        width: auto;
+        display: flex;
+        align-items: center;
+
+        i {
             color: var(--clr-blue);
             padding-left: 54px;
             z-index: 2;
             background-color: rgb(29, 29, 29);
         }
     }
-    span{
+
+    span {
         padding-left: 5px;
         position: relative;
         left: -86px;
@@ -1448,15 +1860,21 @@ svg {
         z-index: 1;
         animation: footer 2s linear;
     }
-    a:hover{
+
+    a:hover {
         color: white;
-        i{color:white;}
-        span{
+
+        i {
+            color: white;
+        }
+
+        span {
             transform: translateX(86px);
             transition: 0.5s;
         }
     }
 }
+
 .copyright {
     color: rgb(113, 113, 113);
     margin-top: 100px;
