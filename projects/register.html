@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(127, 255, 212);
+        }
+
+        .head h1 {
+            font-size: 60px;
+        }
+
+        div {
+            margin: 50px 70px;
+        }
+
+        .form {
+            padding: 40px 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: auto;
+            border-radius: 20px;
+            background-color: rgb(251, 206, 117);
+        }
+
+        form {
+            margin: 30px 20px;
+
+            td {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .inputs {
+                border: none;
+                width: 300px;
+                border-radius: 8px;
+                padding: 10px 50px 10px 10px;
+            }
+
+            .sub {
+                border: none;
+                width: 150px;
+                border-radius: 4px;
+                padding: 5px 10px;
+            }
+
+            select {
+                border-radius: 6px;
+                width: 300px;
+                padding: 10px;
+            }
+        }
+        footer{
+            padding-top: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 10vh;
+            background-color: rgb(51, 51, 51);
+            a{
+                padding: 20px 40px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        a:hover{
+            color: rgb(68, 158, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="head">
+            <h1>Register Form</h1>
+            <h4>Enter your details to fill the form</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, labore atque? In omnis sed maiores
+                cumque ut consectetur voluptatibus magni quisquam. A fugiat, illum vitae animi hic incidunt possimus
+                quam aliquam numquam. Ab iure harum alias aliquam, praesentium magnam aut, quod, consequuntur voluptatum
+                voluptate voluptatibus beatae quisquam dolorum perferendis vel distinctio. Autem et saepe molestiae
+                natus tempore illo. Sit maiores atque fugiat tempora qui commodi doloremque quas adipisci sapiente dolor
+                deleniti, pariatur natus voluptate aperiam cumque odio vero cupiditate minima? Ut accusamus illum sunt
+                cumque neque aliquid incidunt earum esse, at natus hic quos necessitatibus impedit corporis blanditiis
+                saepe ipsa!</p>
+        </div>
+        <hr>
+        <div class="form">
+            <h1>Register for a Course</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td><input class="inputs" type="text" placeholder="Enter Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>:</td>
+                        <td><input class="inputs" type="number" placeholder="Enter Your Age"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td><input type="radio" name="Gender"><b>Male |<input type="radio" name="Gender">Female</b></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input class="inputs" type="email" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Select a Course</td>
+                        <td>:</td>
+                        <td>
+                            <select>
+                                <option>SQL</option>
+                                <option>Python</option>
+                                <option>java</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload your Resume</td>
+                        <td>:</td>
+                        <td><input type="file" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="sub" type="reset"></td>
+                        <td></td>
+                        <td><input class="sub" type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <footer>
+            <a href="index.html">Home</a> | <a href="https://www.instagram.com/vignesh_mass_2002/">Instagram</a> | <a
+                href="https://www.youtube.com/@vignesh_mass_editzz">YouTube</a>
+        </footer>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="navtitle">Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book1">
+            <h2 style="padding-top: 15px; padding-bottom: 10px;">Rich Dad Poor Dad</h2>
+            <h4 style="padding-bottom: 6px;">Salpi Kumar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas eligendi consectetur eius ut
+                culpa ad
+                recusandae asperiores soluta quisquam.</p>
+            <button class="delbtn" id="delbtn1" onclick="delfunc(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="popup">
+        <h2 class="popuptitle">Add Book</h2>
+        <input class="bookname" type="text" placeholder="Book Title" id="booktitle1"><br>
+        <input class="bookauthor" type="text" placeholder="Book Author" id="bookauthor1">
+        <textarea class="description" id="disc1">Short Description...</textarea>
+        <button class="popupaddbtn" id="addbtn">Add</button>
+        <button class="popupcancelbtn" id="cancelbtn">Cancel</button>
+    </div>
+
+    <button class="addbook" id="popupbtn">+</button>
+    <script src="ecom.js"></script>
+</body>
+
+</html>

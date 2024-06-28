@@ -1047,13 +1047,19 @@ a {
             }
         }
     }
+    #subsecondpage{
+        margin-top: -90px;
+        .subsechead{
+            padding-top: 10px;
+        }
+    }
     .projectshead{
         div{
-            width: 80%;
+            width: 20%;
         }
     }
     #fifthpage {
-        margin-top: 1100px;
+        margin-top: 80px;
         .swheadmain{
             padding-top: 90px;
         }
@@ -1102,6 +1108,25 @@ a {
         .abtme2 {
             font-size: 20px;
             margin-top: 480px;
+        }
+    }
+    #fourthpage{ 
+        .certhead{
+            padding-top: 90px;
+        }
+    }
+    #fifthpage {
+        margin-top: 1150px;
+        .swheadmain{
+            padding-top: 90px;
+        }
+    }
+    #sixthpage {
+        height: auto;
+        padding-top: 60px;
+        margin-top: 1480px;
+        .projectshead{
+            div{width: 80%;}
         }
     }
 }
@@ -1250,6 +1275,12 @@ a {
             margin: 5px 0px;
         }
     }
+    #subsecondpage{
+        margin-top: -100px;
+        .subsechead{
+            padding-top: 40px;
+        }
+    }
     #fourthpage{
         .certificate
             div{
@@ -1268,6 +1299,13 @@ a {
             width: 200px;
         }
     }
+    /* #seventhpage {
+        margin-top: -650px;
+        .mailhead{
+            padding-top: 85px;
+        }
+        
+    } */
 }
 @media screen and (max-width:414px){
     .abtmeimg {
@@ -1935,7 +1973,7 @@ svg {
 
 /* ...................................... 5th page ........................... */
 #fifthpage {
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .swhead {
@@ -1943,11 +1981,11 @@ svg {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 90%;
+    width: 95%;
 
     .sw {
         min-width: 250px;
-        width: 50%;
+        width: 30%;
         
         height: auto;
         line-height: 35px;
@@ -1989,6 +2027,9 @@ svg {
     div{
         min-width: 250px;
         max-width: 400px;
+    }
+    a:hover{
+        color: var(--clr-blue);
     }
 }
 /* .......................................... Mail page....................................... */
