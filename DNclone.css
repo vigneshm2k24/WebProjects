@@ -13,9 +13,11 @@
 } */
 
 .navbar-02{
-    width: 90%;
+    width: 100%;
+    background-color: transparent;
+    color: #6c6c6c;
     .ho1{
-        padding-right: 20px;
+        padding: 15px 20px;
         font-size: 14px;
         text-align: right;
         display: flex;
@@ -1255,6 +1257,8 @@ a {
             }
     }
     #fifthpage{
+        .swheadmain h1{text-align: center;}
+        margin-top: 1250px;
         .swhead .sw{
             width: 200px;
         }
@@ -1939,16 +1943,17 @@ svg {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    width: 90%;
 
     .sw {
-        max-width: 500px;
-        min-width: 400px;
+        min-width: 250px;
+        width: 50%;
+        
         height: auto;
         line-height: 35px;
         padding: 40px 20px 40px 50px;
         font-size: 20px;
         color: white;
-        
     }
 }
 
@@ -2014,7 +2019,7 @@ svg {
     .inputs {
         width: 90%;
         max-width: 700px;
-        min-width: 300px;
+        min-width: 200px;
         display: block;
         padding: 15px;
         margin-bottom: 20px;
