@@ -17,13 +17,12 @@
     background-color: transparent;
     color: #6c6c6c;
     .ho1{
-        padding: 15px 20px;
-        font-size: 14px;
+        padding: 5px 10px;
+        font-size: 13px;
         text-align: right;
         display: flex;
         justify-content: right;
         align-items: center;
-        z-index: 3;
         text-decoration: none;
     }
 }
@@ -216,8 +215,23 @@ a {
     top: 0px;
     z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+    animation: sidenav 0.5s linear;
     i{
         padding: 5px;
+    }
+}
+
+/* .navbarx:onclick{
+    .sidenavbarsection{animation: sidenav 0.5s linear reverse;}
+} */
+@keyframes sidenav{
+    0%{
+        transform: translateX(-100%);
+        filter: blur(0);
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(1);
     }
 }
 
@@ -465,6 +479,7 @@ a {
 }
 
 .snavbar1:hover,
+.cd:hover,
 .ad:hover,
 .fe:hover,
 .sr:hover,
@@ -671,7 +686,7 @@ a {
     } */
 
     .mainlssubmenu {
-        left: 672px;
+        left: 505px;
     }
 
     #fourthpage {
@@ -843,7 +858,7 @@ a {
     }
     #secondpage{
         .abtmehead {
-            margin-top: -160px;
+            margin-top: 60px;
         }
     }
     .abtmeimg {
@@ -860,7 +875,7 @@ a {
         height: 150vh;
 
         .abtme {
-            margin-top: 280px;
+            margin-top: 20px;
         }
 
         .abtme11 {
@@ -1348,9 +1363,10 @@ a {
 
 /*.............................................................. Main page........................................................*/
 
-/* .mainpage{
-
-} */
+.mainpage{
+    height: auto;
+    padding-bottom: 100px;
+}
 .wlcmhead {
     text-align: center;
 }
