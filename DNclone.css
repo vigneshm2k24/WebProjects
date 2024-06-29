@@ -31,6 +31,10 @@
     --clr-blue: rgb(22, 92, 255);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -1353,7 +1357,7 @@ a {
 
 .wlcm {
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 5px;
     font-size: 70px;
     animation: fade-up 0.5s 0.4s backwards;
@@ -1453,6 +1457,7 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
+    margin-top: 50px;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -1462,6 +1467,7 @@ a {
 
 .profileimg2 {
     margin: 70px 10px 0px 30px;
+    z-index: 5;
 }
 
 .abtmehead,
@@ -1596,7 +1602,7 @@ a {
         -6px -6px 10px -1px rgba(225, 255, 255, 0.07);
 }
 
-.circle1 {
+/* .circle1 {
     animation: anim1 2s ease-in-out forwards;
 }
 
@@ -1614,6 +1620,36 @@ a {
 
 .circle5 {
     animation: anim5 2s ease-in-out forwards;
+} */
+
+.circle1 {
+    animation: anim1 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.circle2 {
+    animation: anim2 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.circle3 {
+    animation: anim3 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.circle4 {
+    animation: anim4 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.circle5 {
+    animation: anim5 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 svg {
@@ -1906,13 +1942,22 @@ svg {
         }
 }
 
-.school {
-    animation: boxanimation1 1s ease-out;
+.school,.sw1 {
+    animation: boxanimation1 ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
-.college {
-    animation: boxanimation2 1s ease-out;
+.college,.sw2,.g1,.g2 {
+    animation: boxanimation2 ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
+/* .block{
+    animation: boxanimation2 ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+} */
 
 .college:hover,
 .school:hover,
@@ -1948,20 +1993,24 @@ svg {
 
 @keyframes boxanimation1 {
     0% {
+        opacity: 0;
         transform: translateX(-100px);
     }
 
     100% {
+        opacity: 1;
         transform: translateX(0px);
     }
 }
 
 @keyframes boxanimation2 {
     0% {
+        opacity: 0;
         transform: translateX(200px);
     }
 
     100% {
+        opacity: 1;
         transform: translateX(0px);
     }
 }
@@ -2027,6 +2076,13 @@ svg {
     div{
         min-width: 250px;
         max-width: 400px;
+        width: 200px;
+        height: 264px;
+    }
+    button{
+        width: 150px;
+        padding: 10px 20px;
+        border-radius: 6px;
     }
     a:hover{
         color: var(--clr-blue);
@@ -2052,7 +2108,7 @@ svg {
     width: 90%;
     background-color: rgb(236, 146, 233);
     border-radius: 20px;
-    padding: 50px 20px;
+    padding: 50px 20px 30px 20px;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -2168,3 +2224,72 @@ svg {
     position: relative;
     bottom: 30px;
 }
+
+/* .................................scroll animation............................................... */
+
+/* ....................................main page................... */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: scale(0.5);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.right{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateX(-100px);
+}
+.rightshow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+.left{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateX(100px);
+}
+.leftshow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0px);
+}
+
+.up{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateY(200px);
+}
+.upshow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
+}
+
+.down{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateY(-200px);
+}
+.downshow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
+}
+
+/* @media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+} */

@@ -152,3 +152,105 @@ setInterval(()=>{
         number5.innerHTML = counter5 + "%";
     }
 }, 45)
+
+// const observerskill = new IntersectionObserver((entries) =>{
+//     entries.forEach((entry) => {
+//         console.log(entry)
+//         if (entry.isIntersecting){
+//             entry.target.classList.add('show');
+//         }
+//         else{
+//             entry.target.classList.remove('show');
+//         }
+//     });
+// });
+
+// const skillElements = document.querySelectorAll('.anim1');
+// skillElements.forEach((el) => observerskill.observe(el));
+
+
+//...............................scroll animatin.........................//
+
+/* ....................................main page................... */
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+const observer1 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('rightshow');
+        }
+        else{
+            entry.target.classList.remove('rightshow');
+        }
+    });
+});
+
+const rightElements = document.querySelectorAll('.right');
+rightElements.forEach((el) => observer1.observe(el));
+
+
+
+const observer2 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('leftshow');
+        }
+        else{
+            entry.target.classList.remove('leftshow');
+        }
+    });
+});
+
+const leftElements = document.querySelectorAll('.left');
+leftElements.forEach((el) => observer2.observe(el));
+
+
+
+const observer3 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('upshow');
+        }
+        else{
+            entry.target.classList.remove('upshow');
+        }
+    });
+});
+
+const upElements = document.querySelectorAll('.up');
+upElements.forEach((el) => observer3.observe(el));
+
+
+const observer4 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('downshow');
+        }
+        else{
+            entry.target.classList.remove('downshow');
+        }
+    });
+});
+
+const downElements = document.querySelectorAll('.down');
+downElements.forEach((el) => observer4.observe(el));
