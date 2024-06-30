@@ -863,7 +863,7 @@ a {
     }
     .abtmeimg {
         position: absolute;
-        margin-top: -60px;
+        margin-top: -160px;
 
         .profileimg2 {
             width: 300px;
@@ -875,12 +875,11 @@ a {
         height: 150vh;
 
         .abtme {
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
         .abtme11 {
             font-size: 18px;
-            text-align: center;
         }
 
         .abtme2 {
