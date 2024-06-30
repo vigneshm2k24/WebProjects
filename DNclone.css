@@ -875,11 +875,12 @@ a {
         height: 150vh;
 
         .abtme {
-            margin-top: 20px;
+            margin-top: 60px;
         }
 
         .abtme11 {
             font-size: 18px;
+            text-align: center;
         }
 
         .abtme2 {
