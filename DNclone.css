@@ -80,8 +80,7 @@ body {
 
 .logo {
     margin-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 15px 0px;
 }
 
 .booknowbtn,
@@ -707,6 +706,13 @@ a {
 }
 
 @media screen and (max-width:940px) {
+    .logo {
+        margin-left: 10px;
+        padding-top: 15px 0px;
+    }
+    .navbar0{
+        margin-left: 50px;
+    }
     .mainpage02 {
         .mainpage-2 {
             display: block;
@@ -863,7 +869,7 @@ a {
     }
     .abtmeimg {
         position: absolute;
-        margin-top: -160px;
+        margin-top: -360px;
 
         .profileimg2 {
             width: 300px;
@@ -1250,7 +1256,7 @@ a {
     }
     .abtmeimg {
         position: absolute;
-        margin-top: -80px;
+        margin-top: -360px;
 
         .profileimg2 {
             width: 300px;
@@ -1278,16 +1284,7 @@ a {
 @media screen and (max-width:450px){
     .abtmeimg {
         position: absolute;
-        margin-top: -40px;
-
-        .profileimg2 {
-            width: 300px;
-            margin: 5px 0px;
-        }
-    }
-    .abtmeimg {
-        position: absolute;
-        margin-top: -80px;
+        margin-top: -280px;
 
         .profileimg2 {
             width: 300px;
@@ -1329,7 +1326,7 @@ a {
 @media screen and (max-width:414px){
     .abtmeimg {
         position: absolute;
-        margin-top: -20px;
+        margin-top: -250px;
 
         .profileimg2 {
             width: 300px;
@@ -1340,10 +1337,10 @@ a {
 @media screen and (max-width:360px){
     .abtmeimg {
         position: absolute;
-        margin-top: 130px;
+        margin-top: -170px;
 
         .profileimg2 {
-            width: 250px;
+            width: 280px;
             margin: 5px 0px;
         }
     }
