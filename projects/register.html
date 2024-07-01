@@ -12,8 +12,20 @@
             background-color: rgb(127, 255, 212);
         }
 
-        .head h1 {
-            font-size: 60px;
+        .head{
+            h1 {
+                padding: 10px;
+                font-size: 60px;
+            }
+            h4{
+                padding: 10px 0px 15px;
+                font-size: 20px;
+                color: rgb(53, 53, 53);
+            }
+            p{
+                font-size: 15px;
+                color: rgb(67, 67, 67);
+            }
         }
 
         div {
@@ -30,6 +42,18 @@
             height: auto;
             border-radius: 20px;
             background-color: rgb(251, 206, 117);
+        }
+        .btn{
+            margin: 40px 10px 0px 10px;
+            td{padding-right: 30px;}
+            .reset:hover{
+                background-color: rgb(255, 78, 19);
+                color: white;
+            }
+            .submit:hover{
+                background-color: rgb(104, 211, 5);
+                color: white;
+            }
         }
 
         form {
@@ -134,10 +158,12 @@
                         <td>:</td>
                         <td><input type="file" placeholder="Enter Your Email"></td>
                     </tr>
+                </table>
+                <table class="btn">
                     <tr>
-                        <td><input class="sub" type="reset"></td>
+                        <td><input class="sub reset" type="reset"></td>
                         <td></td>
-                        <td><input class="sub" type="submit"></td>
+                        <td><input class="sub submit" type="submit"></td>
                     </tr>
                 </table>
             </form>
