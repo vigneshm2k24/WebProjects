@@ -3,12 +3,14 @@ var sidemenu=document.querySelector(".sidenavbarsection")
 var navbarx=document.querySelector(".navbarx")
 // var navbar=document.querySelector(".navbar")
 var section=document.querySelector("section")
+var navbar02=document.querySelector(".navbar-02")
 
 
 sidemenubtn.addEventListener("click",function(){
     sidemenu.style.display="block"
     sidemenubtn.style.display="none"
     navbarx.style.display="block"
+    navbar02.style.display="none"
     // navbar.style.box-shadow="none"
 })
 
@@ -16,6 +18,7 @@ navbarx.addEventListener("click",function(){
     sidemenu.style.display="none"
     sidemenubtn.style.display="block"
     navbarx.style.display="none"
+    navbar02.style.display="block"
 })
 
 section.addEventListener("click",function(){

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* .bgvideo{
     position: absolute;
     bottom: 0;
@@ -13,6 +12,7 @@
 } */
 
 .navbar-02{
+    display: block;
     width: 100%;
     background-color: transparent;
     color: #6c6c6c;
@@ -707,11 +707,15 @@ a {
 
 @media screen and (max-width:940px) {
     .logo {
-        margin-left: 10px;
+        margin-left: 30px;
         padding-top: 15px 0px;
     }
-    .navbar0{
-        margin-left: 50px;
+    .navbarmenu {
+        padding-right: 20px;
+    }
+    
+    .navbarx {
+        padding-right: 20px;
     }
     .mainpage02 {
         .mainpage-2 {
@@ -1361,6 +1365,8 @@ a {
 /*.............................................................. Main page........................................................*/
 
 .mainpage{
+    width: 100%;
+    overflow-x: clip;
     height: auto;
     padding-bottom: 100px;
 }
@@ -1423,6 +1429,7 @@ a {
 
 .profileimg,
 .profileimg2 {
+    overflow-x: clip;
     width: 400px;
     background-color: white;
     border-radius: 30px;
@@ -1430,7 +1437,9 @@ a {
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
+.mainpage2{
+    overflow-x: clip;
+}
 .mainpage02 {
     display: flex;
     justify-content: center;
@@ -1470,6 +1479,8 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
+    width: 100%;
+    overflow-x: clip;
     margin-top: 50px;
     height: auto;
     display: flex;
@@ -1756,6 +1767,8 @@ svg {
 #fifthpage,
 #sixthpage,
 #seventhpage {
+    width: 100%;
+    overflow-x: clip;
     height: auto;
     /* margin-top: 20px; */
     margin-bottom: 20px;
@@ -1790,8 +1803,9 @@ svg {
         margin-bottom: 20px;
     } */
 }
-.education{
+.subsechead,.projecthead{
     width: 100%;
+    overflow-x: clip;
 }
 
 .school,
