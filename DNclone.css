@@ -11,7 +11,7 @@
     height: auto;
 } */
 #progress{
-    background-color: #03cc65;
+    background-color: var(--clr-blue);
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -36,6 +36,8 @@
     color: #001a2e;
 }
 .navbar-02{
+    position: sticky;
+    top: 70px;
     display: block;
     width: 100%;
     background-color: transparent;
