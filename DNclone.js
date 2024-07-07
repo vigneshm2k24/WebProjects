@@ -277,6 +277,8 @@ const observer4 = new IntersectionObserver((entries) =>{
 const downElements = document.querySelectorAll('.down');
 downElements.forEach((el) => observer4.observe(el));
 
+
+
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");

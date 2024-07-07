@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* .bgvideo{
     position: absolute;
     bottom: 0;
@@ -10,7 +11,7 @@
     width: 100%;
     height: auto;
 } */
-#progress{
+#progress {
     background-color: var(--clr-blue);
     position: fixed;
     bottom: 20px;
@@ -24,7 +25,8 @@
     cursor: pointer;
     z-index: 10;
 }
-#progress-value{
+
+#progress-value {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
@@ -35,15 +37,15 @@
     font-size: 35px;
     color: #001a2e;
 }
-.navbar-02{
-    position: sticky;
-    top: 70px;
+
+.navbar-02 {
     display: block;
     width: 100%;
     background-color: transparent;
     color: #6c6c6c;
-    .ho1{
-        padding: 5px 10px;
+
+    .ho1 {
+        padding: 15px 10px;
         font-size: 13px;
         text-align: right;
         display: flex;
@@ -52,11 +54,12 @@
         text-decoration: none;
     }
 }
+
 :root {
     --clr-blue: rgb(22, 92, 255);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -65,7 +68,7 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-color: #ffffff;
+    background-color: rgb(233, 240, 255);
     /* background-image: url("../assets/images/whiteps.png"); */
     background-size: cover;
     background-position: center;
@@ -241,7 +244,8 @@ a {
     z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
     animation: sidenav 0.5s linear;
-    i{
+
+    i {
         padding: 5px;
     }
 }
@@ -249,12 +253,13 @@ a {
 /* .navbarx:onclick{
     .sidenavbarsection{animation: sidenav 0.5s linear reverse;}
 } */
-@keyframes sidenav{
-    0%{
+@keyframes sidenav {
+    0% {
         transform: translateX(-100%);
         filter: blur(0);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         filter: blur(1);
     }
@@ -483,7 +488,7 @@ a {
 
 /* hovers */
 .navbar0:hover {
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .navbar1:hover {
@@ -500,6 +505,7 @@ a {
 .navbarbtn2:hover,
 .learnmore:hover {
     background-color: rgb(0, 60, 201);
+    transition: none;
     cursor: pointer;
 }
 
@@ -599,14 +605,6 @@ a {
         margin-left: 30px;
     }
 
-    .mainpage {
-        margin-top: 110px;
-
-        .wlcm {
-            font-size: 400%;
-        }
-    }
-
     .navbar {
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
@@ -615,7 +613,7 @@ a {
         text-align: center;
 
         .wlcm {
-            margin-top: 150px;
+            margin-top: 50px;
             padding-top: 0px;
             margin-bottom: 20px;
         }
@@ -677,6 +675,7 @@ a {
             stroke-dashoffset: 284;
         }
     }
+
     .projects {
         display: flex;
         justify-content: center;
@@ -685,11 +684,16 @@ a {
         .python,
         .css,
         .js,
-        .pm,.dm,.dm2{
+        .pm,
+        .dm,
+        .dm2 {
             width: 100px;
 
         }
-        .dm{margin-top: -50px;}
+
+        .dm {
+            margin-top: -50px;
+        }
     }
 
 }
@@ -706,9 +710,15 @@ a {
 } */
 
 @media screen and (max-width:1355px) {
+
     /* .sr {
         display: none;
     } */
+    #secondpage {
+        .abtmehead {
+            margin-top: 120px;
+        }
+    }
 
     .mainlssubmenu {
         left: 505px;
@@ -720,13 +730,30 @@ a {
         .css,
         .js,
         .sw,
-        .pm,.dm,.dm2 {
+        .pm,
+        .dm,
+        .dm2 {
             min-width: 180px;
             width: 200px;
             height: 250px;
         }
-        .dm{
+
+        .dm {
             margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:1536px) {
+    .mainpage {
+        .wlcmhead {
+            text-align: center;
+            margin-top: 110px;
+
+            .wlcm {
+                padding-top: 0px;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -736,13 +763,15 @@ a {
         margin-left: 30px;
         padding-top: 15px 0px;
     }
+
     .navbarmenu {
         padding-right: 20px;
     }
-    
+
     .navbarx {
         padding-right: 20px;
     }
+
     .mainpage02 {
         .mainpage-2 {
             display: block;
@@ -753,12 +782,12 @@ a {
         }
     }
 
-    .wlcmhead {
+    .mainpage .wlcmhead {
         text-align: center;
+        margin-top: 50px;
 
         .wlcm {
             font-size: 320%;
-            margin-top: 0px;
             padding-top: 0px;
             padding-bottom: 25px;
 
@@ -892,11 +921,16 @@ a {
             stroke-dashoffset: 284;
         }
     }
-    #secondpage{
+
+    #secondpage {
         .abtmehead {
             margin-top: 60px;
         }
+        .abtme2 {
+            margin-left: 0;
+        }
     }
+
     .abtmeimg {
         position: absolute;
         margin-top: -360px;
@@ -980,39 +1014,48 @@ a {
             }
         }
     }
-    #subsecondpage{
+
+    #subsecondpage {
         margin-top: -100px;
-        .subsechead{
+
+        .subsechead {
             padding-top: 40px;
         }
     }
-    #fourthpage{
-        .certhead{
+
+    #fourthpage {
+        .certhead {
             padding-top: 70px;
         }
     }
+
     #fifthpage {
         margin-top: 0px;
-        .swheadmain{
+
+        .swheadmain {
             padding-top: 90px;
         }
     }
+
     #sixthpage {
         height: auto;
         padding-top: 60px;
         margin-top: 80px;
-        .projecthead{
+
+        .projecthead {
             padding-top: 90px;
         }
     }
+
     #seventhpage {
         margin-top: -650px;
-        .mailhead{
+
+        .mailhead {
             padding-top: 85px;
         }
-        
+
     }
-    
+
 }
 
 @media screen and (max-width:630px) {
@@ -1069,7 +1112,15 @@ a {
     }
 }
 
-@media screen and (max-width:858px) {
+@media screen and (max-width:898px) {
+
+    .mainpage{
+    .wlcmhead {
+        margin-top: 80px;
+        .wlcm{
+        }
+    }}
+
     #subsecondpage .edu2 {
         width: 95%;
         justify-content: center;
@@ -1102,47 +1153,58 @@ a {
             }
         }
     }
-    #subsecondpage{
+
+    #subsecondpage {
         margin-top: -90px;
-        .subsechead{
+
+        .subsechead {
             padding-top: 10px;
         }
     }
-    .projectshead{
-        div{
+
+    .projectshead {
+        div {
             width: 20%;
         }
     }
+
     #fifthpage {
-        margin-top: 80px;
-        .swheadmain{
-            padding-top: 90px;
+        margin-top: 280px;
+
+        .swheadmain {
+            padding-top: 140px;
         }
     }
 }
+
 @media screen and (max-width:800px) {
-    #fourthpage{
-        .certhead{
+    #fourthpage {
+        .certhead {
             padding-top: 70px;
         }
-        .projects{
+
+        .projects {
             justify-content: center;
         }
-        .certificate{
+
+        .certificate {
             margin: 20px 10px;
             display: flex;
             justify-content: center;
-            div{
+
+            div {
                 width: 400px;
                 margin: 0px;
             }
         }
     }
+
     #sixthpage {
         height: auto;
         padding-top: 60px;
         margin-top: 1480px;
-        .projecthead{
+
+        .projecthead {
             padding-top: 90px;
         }
     }
@@ -1165,23 +1227,30 @@ a {
             margin-top: 480px;
         }
     }
-    #fourthpage{ 
-        .certhead{
+
+    #fourthpage {
+        .certhead {
             padding-top: 90px;
         }
     }
+
     #fifthpage {
         margin-top: 1150px;
-        .swheadmain{
+
+        .swheadmain {
             padding-top: 90px;
         }
     }
+
     #sixthpage {
         height: auto;
         padding-top: 60px;
         margin-top: 1480px;
-        .projectshead{
-            div{width: 80%;}
+
+        .projectshead {
+            div {
+                width: 80%;
+            }
         }
     }
 }
@@ -1284,6 +1353,7 @@ a {
             stroke-dashoffset: 665
         }
     }
+
     .abtmeimg {
         position: absolute;
         margin-top: -360px;
@@ -1293,25 +1363,46 @@ a {
             margin: 5px 0px;
         }
     }
-    #fourthpage{
-        .certificate
-            div{
-                width: 300px;
-            }
+
+    #fourthpage {
+        .certificate div {
+            width: 300px;
+        }
     }
-    #fifthpage{
-        .swhead .sw{
+
+    #fifthpage {
+        .swhead .sw {
             width: 200px;
         }
     }
-    #sixthpage{
-        .projectshead div{
+
+    #sixthpage {
+        .projectshead div {
             width: 300px;
         }
     }
 
 }
-@media screen and (max-width:450px){
+
+@media screen and (max-width:450px) {
+    .mainpage {
+        .wlcmhead {
+            font-size: 13px;
+        }
+
+        .mainpage2 {
+            .my {
+                font-size: 30px;
+            }
+            .typetext {
+                font-size: 20px;
+                .auto-type{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
     .abtmeimg {
         position: absolute;
         margin-top: -280px;
@@ -1321,30 +1412,39 @@ a {
             margin: 5px 0px;
         }
     }
-    #subsecondpage{
+
+    #subsecondpage {
         margin-top: -100px;
-        .subsechead{
+
+        .subsechead {
             padding-top: 40px;
         }
     }
-    #fourthpage{
-        .certificate
-            div{
-                width: 200px;
-            }
+
+    #fourthpage {
+        .certificate div {
+            width: 200px;
+        }
     }
-    #fifthpage{
-        .swheadmain h1{text-align: center;}
+
+    #fifthpage {
+        .swheadmain h1 {
+            text-align: center;
+        }
+
         margin-top: 1250px;
-        .swhead .sw{
+
+        .swhead .sw {
             width: 200px;
         }
     }
-    #sixthpage{
-        .projectshead div{
+
+    #sixthpage {
+        .projectshead div {
             width: 200px;
         }
     }
+
     /* #seventhpage {
         margin-top: -650px;
         .mailhead{
@@ -1353,7 +1453,8 @@ a {
         
     } */
 }
-@media screen and (max-width:414px){
+
+@media screen and (max-width:414px) {
     .abtmeimg {
         position: absolute;
         margin-top: -250px;
@@ -1364,16 +1465,53 @@ a {
         }
     }
 }
-@media screen and (max-width:360px){
+
+@media screen and (max-width:360px) {
+    .mainpage {
+        margin-top: 50px;
+        font-size: 12px;
+
+        .mainpage-2 .myhead {
+            font-size: 38px;
+        }
+    }
+
     .abtmeimg {
         position: absolute;
-        margin-top: -170px;
+        margin-top: -180px;
 
         .profileimg2 {
             width: 280px;
             margin: 5px 0px;
         }
+        
     }
+    .mainpage02 {
+        .mainpage-2 {
+            display: block;
+
+            .my {
+                font-size: 30px;
+            }
+            .typetext {
+                h2{
+                    font-size: 16px;
+                    .auto-type {font-size: 22px;}
+                }
+            }
+        }
+    }
+
+    #secondpage {
+        .abtme2 {
+            font-size: 16px;
+            margin-left: 0;
+        }
+    }
+    #fifthpage {
+        margin-top: 1900px;
+    }
+    
 }
 
 @keyframes cursor {
@@ -1390,12 +1528,13 @@ a {
 
 /*.............................................................. Main page........................................................*/
 
-.mainpage{
+.mainpage {
     width: 100%;
     overflow-x: clip;
     height: auto;
     padding-bottom: 100px;
 }
+
 .wlcmhead {
     text-align: center;
 }
@@ -1463,9 +1602,11 @@ a {
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.mainpage2{
+
+.mainpage2 {
     overflow-x: clip;
 }
+
 .mainpage02 {
     display: flex;
     justify-content: center;
@@ -1513,10 +1654,14 @@ a {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 0px;
+
+    .abtmehead {
+        margin-top: 120px;
+    }
 }
 
 .profileimg2 {
-    margin: 70px 10px 0px 30px;
+    margin: 120px 10px 0px 30px;
     z-index: 5;
 }
 
@@ -1819,7 +1964,8 @@ svg {
 .edu2 {
     display: flex;
 }
-.projects{
+
+.projects {
     row-gap: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -1829,7 +1975,9 @@ svg {
         margin-bottom: 20px;
     } */
 }
-.subsechead,.projecthead{
+
+.subsechead,
+.projecthead {
     width: 100%;
     overflow-x: clip;
 }
@@ -1853,7 +2001,9 @@ svg {
 .python,
 .css,
 .js,
-.pm,.dm,.dm2 {
+.pm,
+.dm,
+.dm2 {
     min-width: 180px;
     width: 230px;
     height: 300px;
@@ -1887,13 +2037,17 @@ svg {
 .project2,
 .project3 {
     margin: 10px;
-    padding: 50px 30px;
+    padding: 30px 15px;
     width: 30%;
+    margin-bottom: 20px;
 
     h1 {
         margin-top: 20px;
         margin-bottom: 50px;
         font-size: 30px;
+    }
+    h3{
+        
     }
 }
 
@@ -1943,7 +2097,7 @@ svg {
     h3 {
         padding-top: 35px;
         font-size: 16px;
-        color: rgba(155, 155, 155, 0.8);
+        color: rgba(210, 210, 210, 0.83);
         /* a{
             color: rgba(208, 208, 208, 0.908);
         }
@@ -1972,7 +2126,9 @@ svg {
 .css,
 .js,
 .sw,
-.pm,.dm,.dm2 {
+.pm,
+.dm,
+.dm2 {
     .basic2 {
         .cert {
             filter: drop-shadow(0px 0px 20px rgb(200, 200, 11));
@@ -1982,30 +2138,39 @@ svg {
         }
     }
 }
+
 .python,
 .css,
-.js{
+.js {
     .basic2 .cert {
-            width: 65px;
-        }
-}
-.pm,.dm,.dm2{
-    .basic2 .cert {
-            width: 60px;
-        }
+        width: 65px;
+    }
 }
 
-.school,.sw1 {
+.pm,
+.dm,
+.dm2 {
+    .basic2 .cert {
+        width: 60px;
+    }
+}
+
+.school,
+.sw1 {
     animation: boxanimation1 ease-out;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 
-.college,.sw2,.g1,.g2 {
+.college,
+.sw2,
+.g1,
+.g2 {
     animation: boxanimation2 ease-out;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+
 /* .block{
     animation: boxanimation2 ease-out;
     animation-timeline: view();
@@ -2030,12 +2195,14 @@ svg {
 }
 
 .css,
-.pm,.dm2{
+.pm,
+.dm2 {
     margin-bottom: -30px;
 }
 
 .python,
-.js,.dm {
+.js,
+.dm {
     margin-top: -30px;
 }
 
@@ -2088,7 +2255,7 @@ svg {
     .sw {
         min-width: 250px;
         width: 30%;
-        
+
         height: auto;
         line-height: 35px;
         padding: 40px 20px 40px 50px;
@@ -2102,8 +2269,12 @@ svg {
     height: auto;
     padding-top: 60px;
 }
-
-.cal-bg {
+.calhead{
+    height: 0px;
+    background-color: #6c6c6c;
+    margin: 0;
+}
+/* .cal-bg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2120,27 +2291,46 @@ svg {
     padding: 15px;
     background-color: rgb(18, 29, 67);
     position: absolute;
+} */
+
+.g1,.g2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 95%;
+        border-radius: 8px;
+    }
+    h1{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
 }
 
-.projectshead{
+.projectshead {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    div{
+
+    div {
         min-width: 250px;
         max-width: 400px;
         width: 200px;
-        height: 264px;
+        height: auto;
     }
-    button{
+
+    button {
         width: 150px;
         padding: 10px 20px;
         border-radius: 6px;
     }
-    a:hover{
+
+    a:hover {
         color: var(--clr-blue);
     }
 }
+
 /* .......................................... Mail page....................................... */
 #seventhpage {
     height: auto;
@@ -2150,13 +2340,15 @@ svg {
     display: flex;
     justify-content: center;
 }
-.mailhead{
+
+.mailhead {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .mail {
     width: 90%;
     background-color: rgb(236, 146, 233);
@@ -2281,61 +2473,66 @@ svg {
 /* .................................scroll animation............................................... */
 
 /* ....................................main page................... */
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
     transform: scale(0.5);
 }
-.show{
+
+.show {
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
 }
 
-.right{
+.right {
     opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-100px);
 }
-.rightshow{
+
+.rightshow {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0%);
 }
 
-.left{
+.left {
     opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(100px);
 }
-.leftshow{
+
+.leftshow {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0px);
 }
 
-.up{
+.up {
     opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateY(200px);
 }
-.upshow{
+
+.upshow {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0px);
 }
 
-.down{
+.down {
     opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateY(-200px);
 }
-.downshow{
+
+.downshow {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0px);
