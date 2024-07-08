@@ -1428,11 +1428,12 @@ a {
     }
 
     #fifthpage {
+        margin-top: 1900px;
         .swheadmain h1 {
             text-align: center;
         }
 
-        margin-top: 1250px;
+        
 
         .swhead .sw {
             width: 200px;
@@ -1445,13 +1446,9 @@ a {
         }
     }
 
-    /* #seventhpage {
-        margin-top: -650px;
-        .mailhead{
-            padding-top: 85px;
-        }
-        
-    } */
+    #seventhpage {
+        margin-top:-600px;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -1462,6 +1459,11 @@ a {
         .profileimg2 {
             width: 300px;
             margin: 5px 0px;
+        }
+    }
+    #fifthpage {
+        .swhead1{
+            margin-top: 500px;
         }
     }
 }
@@ -1478,7 +1480,7 @@ a {
 
     .abtmeimg {
         position: absolute;
-        margin-top: -180px;
+        margin-top: -80px;
 
         .profileimg2 {
             width: 280px;
@@ -1509,8 +1511,23 @@ a {
         }
     }
     #fifthpage {
-        margin-top: 1900px;
+        margin-top: 1500px; 
+        .swhead1{ margin-top: 0px;
+        padding-top: 0;}
     }
+
+    #sixthpage {
+        min-height: 1900px;
+        margin-top: 1700px; 
+        .projectshead div {
+            width: 200px;
+        }
+    }
+
+    #seventhpage {
+        margin-top:-400px;
+    }
+    
     
 }
 
@@ -1646,6 +1663,7 @@ a {
 
 /* ...................................2nd PAGE.............................................. */
 #secondpage {
+    position: relative;
     width: 100%;
     overflow-x: clip;
     margin-top: 50px;
