@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     .obj1,.obj2,.obj11,.obj12{
         position: absolute;
         border-radius: 50%;
@@ -1575,6 +1576,35 @@ a {
 
     #seventhpage {
         margin-top:-600px;
+    }
+    .object,.object1,.object2{
+        .obj1,.obj11{
+            min-width: 40px;
+            min-height: 40px;
+        }
+        .obj2,.obj12{
+            min-width: 20px;
+            min-height: 20px;
+        }
+        .obj2{
+            top: 260px;
+        }
+        .obj12{
+            top: 150px;
+        }
+        .obj21{
+            top: 300px;
+            min-width: 50px;
+            min-height: 50px;
+            border-radius: 20px;
+        }
+        .obj22{
+            top: 710px;
+            left: 10px;
+            min-width: 50px;
+            min-height: 50px;
+            border-radius: 20px;
+        }
     }
 }
 
