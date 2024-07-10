@@ -65,7 +65,7 @@
         border-radius: 50%;
     }
     .obj1{
-        border: 15px solid rgb(183, 183, 255);
+        border: 15px solid rgba(183, 183, 255, 0.366);
         top: 150px;
         right: 50px;
         max-width: 300px;
@@ -83,11 +83,11 @@
         max-height: 150px;
         min-height: 50px;
         border-radius: 50%;
-        border: 15px solid rgb(255, 193, 193);
+        border: 15px solid rgba(255, 193, 193, 0.462);
         animation: obj-animation 8s infinite linear reverse;
     }
     .obj11{
-        border: 15px solid rgb(183, 183, 255);
+        border: 15px solid rgba(183, 183, 255, 0.395);
         top: 350px;
         left: 50px;
         max-width: 300px;
@@ -97,7 +97,7 @@
         animation: obj-animation1 8s infinite linear;
     }
     .obj12{
-        border: 15px solid rgb(255, 193, 193);
+        border: 15px solid rgba(255, 193, 193, 0.364);
         top: 450px;
         left: 150px;
         max-width: 150px;
@@ -109,7 +109,7 @@
     .obj21{
         border-radius: 40px;
         position: absolute;
-        border: 15px solid rgba(0, 164, 36, 0.34);
+        border: 15px solid rgba(0, 164, 36, 0.299);
         top: 200px;
         left: 60%;
         max-width: 300px;
@@ -121,7 +121,7 @@
     .obj22{
         border-radius: 40px;
         position: absolute;
-        border: 15px solid rgba(0, 164, 36, 0.34);
+        border: 15px solid rgba(0, 164, 36, 0.342);
         top: 500px;
         left: 30%;
         max-width: 300px;
