@@ -54,6 +54,133 @@
         text-decoration: none;
     }
 }
+.object,.object1,.object2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .obj1,.obj2,.obj11,.obj12{
+        position: absolute;
+        border-radius: 50%;
+    }
+    .obj1{
+        border: 15px solid rgb(183, 183, 255);
+        top: 150px;
+        right: 50px;
+        max-width: 300px;
+        min-width: 100px;
+        max-height: 300px;
+        min-height: 100px;
+        animation: obj-animation 8s infinite linear;
+    }
+    .obj2{
+        position: absolute;
+        top: 250px;
+        right: 150px;
+        max-width: 150px;
+        min-width: 50px;
+        max-height: 150px;
+        min-height: 50px;
+        border-radius: 50%;
+        border: 15px solid rgb(255, 193, 193);
+        animation: obj-animation 8s infinite linear reverse;
+    }
+    .obj11{
+        border: 15px solid rgb(183, 183, 255);
+        top: 350px;
+        left: 50px;
+        max-width: 300px;
+        min-width: 100px;
+        max-height: 300px;
+        min-height: 100px;
+        animation: obj-animation1 8s infinite linear;
+    }
+    .obj12{
+        border: 15px solid rgb(255, 193, 193);
+        top: 450px;
+        left: 150px;
+        max-width: 150px;
+        min-width: 50px;
+        max-height: 150px;
+        min-height: 50px;
+        animation: obj-animation1 8s infinite linear reverse;
+    }
+    .obj21{
+        border-radius: 40px;
+        position: absolute;
+        border: 15px solid rgba(0, 164, 36, 0.34);
+        top: 200px;
+        left: 60%;
+        max-width: 300px;
+        min-width: 150px;
+        max-height: 300px;
+        min-height: 150px;
+        animation: obj-animation2 10s infinite linear;
+    }
+    .obj22{
+        border-radius: 40px;
+        position: absolute;
+        border: 15px solid rgba(0, 164, 36, 0.34);
+        top: 500px;
+        left: 30%;
+        max-width: 300px;
+        min-width: 150px;
+        max-height: 300px;
+        min-height: 150px;
+        animation: obj-animation2 10s infinite linear reverse;
+    }
+    
+}
+
+@keyframes obj-animation{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+@keyframes obj-animation1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes obj-animation2{
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+/* @keyframes obj-animation2-scale{
+    0%{
+        transform:scale(0.3);
+        
+    }
+    50%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0.3);
+        
+    }
+} */
+
 
 :root {
     --clr-blue: rgb(22, 92, 255);
@@ -1117,8 +1244,8 @@ a {
     .mainpage{
     .wlcmhead {
         margin-top: 80px;
-        .wlcm{
-        }
+        /* .wlcm{
+        } */
     }}
 
     #subsecondpage .edu2 {
