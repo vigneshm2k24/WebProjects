@@ -2509,6 +2509,7 @@ svg {
     h1{
         margin-top: 20px;
         margin-bottom: 0px;
+        cursor: pointer;
     }
     /* button:hover {
         background-color: rgb(252, 222, 147);
